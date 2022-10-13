@@ -8,8 +8,7 @@ driver = webdriver.Edge()
 
 def spam():
     while True:
-        #True Line:driver.get('https://studip.uni-hannover.de/dispatch.php/course/statusgroups/join/a59f051eb2da38f164610a99da68038c?cid=2d6d18040920a5d8afd036242d1c9f8c')
-        driver.get('https://studip.uni-hannover.de/dispatch.php/course/statusgroups/join/e8eb04c768a4b4ae920f6122314c156b?cid=0ee057761aa44f9e09a06d3bdbd802c1')
+        driver.get('https://studip.uni-hannover.de/dispatch.php/course/statusgroups/join/a59f051eb2da38f164610a99da68038c?cid=2d6d18040920a5d8afd036242d1c9f8c')
         time.sleep(0.25)
 
 
