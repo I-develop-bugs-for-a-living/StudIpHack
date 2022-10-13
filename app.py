@@ -5,10 +5,11 @@ import datetime
 
 driver = webdriver.Edge()
 
+LINK = 'https://studip.uni-hannover.de/dispatch.php/course/statusgroups/join/a59f051eb2da38f164610a99da68038c?cid=2d6d18040920a5d8afd036242d1c9f8c'
 
 def spam():
     while True:
-        driver.get('https://studip.uni-hannover.de/dispatch.php/course/statusgroups/join/a59f051eb2da38f164610a99da68038c?cid=2d6d18040920a5d8afd036242d1c9f8c')
+        driver.get(LINK)
         time.sleep(0.25)
 
 
