@@ -9,13 +9,13 @@ LINK = 'https://studip.uni-hannover.de/dispatch.php/course/statusgroups/join/a59
 
 def spam():
     while True:
+        driver.get(LINK)
         current_time = datetime.datetime.now().time()
+        # driver.get(LINK)
+        driver.navigate().refresh() # This line needs testing
         if current_time.hour == hour and current_time.minute == minute and current_time.seconds >= 20:
             quit()
-        driver.get(LINK)
         time.sleep(0.25)
-
-
 
 
 print("Welcome to the PayToDrin")
